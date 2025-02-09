@@ -1,0 +1,3 @@
+window.APP_CONFIG = {
+    APP_ID: "938f8cd52897beb4316b817ac5141360"
+};

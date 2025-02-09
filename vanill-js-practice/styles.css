@@ -1,0 +1,136 @@
+.hidden {
+    display: none !important;
+}
+
+
+#quote {
+    display: flex;
+    flex-direction: column;
+    position: fixed; 
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    text-align: center; 
+}
+
+
+img {
+    position:absolute;
+    width:100vw;
+    height:100vh;
+    left: 0px;
+    top: 0px;
+    right:0px;
+    bottom:0px;
+    z-index: -1;
+    opacity:80%;
+}
+
+#clock {
+    position: fixed; 
+    top: 30px; 
+    right: 30px; 
+}
+
+.today-lists{
+    margin-left:15px;
+    width:fit-content;
+}
+
+#greeting, #weather{
+    color: rgb(250, 246, 246);
+    display: inline-block;
+}
+
+#greeting{
+    margin-left:15px;
+}
+#login-form {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display:inline-block;
+}
+
+#weather {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 100px;
+    right: 30px;
+    text-align: right;
+}
+
+input {
+    width: auto; 
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color: skyblue;
+    box-shadow: 0 0 8px skyblue;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-style: italic;
+}
+
+input[type="submit"] {
+    padding: 10px 15px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    border-color: skyblue; 
+    color: skyblue; 
+}
+
+#todo-list {
+    list-style: none;
+    display:inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+#todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* 구분선 추가 */
+}
+
+#todo-list li button {
+    margin-left: 5px;
+    padding: 8px 12px;
+    border: 2px solid white; 
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#todo-list li button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-color: skyblue; 
+    color: skyblue;
+}
+
+body, button, input{
+    color: white;
+}
